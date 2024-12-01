@@ -75,7 +75,7 @@ const Home = () => {
                 className="w-full h-full object-cover"
                 crossOrigin="anonymous"
                 srcSet={`${slide.image.small} 512w, ${slide.image.medium} 1024w`}
-                sizes="(max-width: 600px) 512px, (max-width: 1024px) 1024px, 2048px"
+                sizes="(max-width: 600px) 512px, 1024px"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
             </div>
