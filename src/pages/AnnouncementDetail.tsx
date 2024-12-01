@@ -50,7 +50,7 @@ const announcements = {
 
 const AnnouncementDetail = () => {
   const { id } = useParams();
-  const [announcement, setAnnouncement] = useState(
+  const [announcement] = useState(
     announcements[id as keyof typeof announcements]
   );
   const [isLoading, setIsLoading] = useState(true);

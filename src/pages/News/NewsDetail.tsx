@@ -16,7 +16,7 @@ const newsData: News[] = [
       <p>Jaya terus, Juwita! Jaya terus, SMP IP YAKIN!</p>
     `,
     image:
-      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1732849513/tari_prestasi_m3qzce.webp",
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733056074/tari_prestasi_p3falv.webp",
     category: "achievement",
   },
   // ...other news items

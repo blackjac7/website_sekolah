@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Calendar, Search, Filter } from "../components/Icons";
+import { useState } from "react";
+import { Search, Filter } from "../components/Icons";
 import { academicCalendarData } from "../data/academicCalendar";
 
 const AcademicCalendar = () => {

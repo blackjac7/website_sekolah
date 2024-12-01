@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import {
   ArrowRight,
   ArrowLeft,
@@ -9,7 +9,6 @@ import {
   Star,
   Brain,
   Heart,
-  MessageCircle,
   Instagram,
 } from "../components/Icons";
 import { Link } from "react-router-dom";

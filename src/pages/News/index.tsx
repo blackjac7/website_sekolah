@@ -11,7 +11,7 @@ const newsData: News[] = [
     content:
       "Selamat dan bangga! Juwita, peserta didik SMP IP YAKIN, telah meraih prestasi luar biasa dengan meraih juara kedua dalam kompetisi tari tradisional nasional yang diselenggarakan di Taman Mini Indonesia Indah (TMII). Juwita telah menunjukkan kemampuan dan dedikasi yang luar biasa dalam menampilkan tarian tradisional yang indah dan menginspirasi. Prestasi ini tidak hanya membanggakan dirinya, tetapi juga membanggakan sekolah dan semua pihak yang terlibat dalam pendidikannya. Kami selalu mendorong siswa-siswi kami untuk terus berkarya dan mencapai prestasi tertinggi di berbagai bidang. Kesuksesan Juwita adalah bukti nyata bahwa dengan kerja keras, dedikasi, dan dukungan yang tepat, semua hal mungkin tercapai. Marilah kita berterima kasih kepada Juwita atas prestasinya dan terus mendukung semua siswa SMP IP YAKIN dalam mengejar cita-cita dan mencapai kesuksesan. Jaya terus, Juwita! Jaya terus, SMP IP YAKIN!",
     image:
-      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1732849513/tari_prestasi_m3qzce.webp",
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733056074/tari_prestasi_p3falv.webp",
     category: "achievement",
   },
   {
