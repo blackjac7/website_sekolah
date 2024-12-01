@@ -19,9 +19,9 @@ const facilities: Facility[] = [
   },
   {
     id: "2",
-    name: "Perpustakaan Digital",
+    name: "Perpustakaan",
     description:
-      "Perpustakaan dengan koleksi buku fisik dan digital, dilengkapi area membaca yang nyaman dan akses e-library.",
+      "Perpustakaan dengan koleksi buku fisik, dilengkapi area membaca yang nyaman dan akses e-library.",
     image:
       "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3",
     category: "library",
@@ -32,7 +32,7 @@ const facilities: Facility[] = [
     description:
       "Fasilitas olahraga lengkap termasuk lapangan futsal, basket, dan area atletik dengan standar nasional.",
     image:
-      "https://images.unsplash.com/photo-1505305976870-c0be1cd39939?ixlib=rb-4.0.3",
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/w_1024/q_auto/f_auto/v1733094531/lapangan_pxkhxa.jpg",
     category: "sports",
   },
   {
@@ -41,8 +41,26 @@ const facilities: Facility[] = [
     description:
       "Lab komputer dengan perangkat terbaru untuk pembelajaran teknologi informasi dan programming.",
     image:
-      "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3",
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
     category: "laboratory",
+  },
+  {
+    id: "5",
+    name: "Kantin Sekolah",
+    description:
+      "Kantin dengan berbagai pilihan makanan dan minuman sehat untuk menunjang gizi siswa.",
+    image:
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/w_1024/q_auto/f_auto/v1733095032/kantin_xhsmox.jpg",
+    category: "other",
+  },
+  {
+    id: "6",
+    name: "Mesin Minuman Otomatis",
+    description:
+      "Mesin minuman otomatis yang menyediakan berbagai minuman sehat dan menyegarkan.",
+    image:
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/w_1024/q_auto/f_auto/v1733095023/mesin_otomatis_gcb28n.jpg",
+    category: "other",
   },
 ];
 

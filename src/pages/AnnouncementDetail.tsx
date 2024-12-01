@@ -42,7 +42,6 @@ const announcements = {
       { name: "Formulir_Pendaftaran.pdf", size: "1.2 MB" },
       { name: "Brosur_Sekolah.pdf", size: "2.5 MB" },
     ],
-    views: 1250,
     priority: "high",
   },
   // ...tambahkan data dummy lainnya
@@ -100,8 +99,6 @@ const AnnouncementDetail = () => {
             >
               {announcement.priority === "high" ? "Penting" : "Informasi"}
             </span>
-            <Eye className="h-4 w-4" />
-            <span>{announcement.views} views</span>
           </div>
 
           <h1 className="text-3xl font-bold text-gray-800 mb-6">
