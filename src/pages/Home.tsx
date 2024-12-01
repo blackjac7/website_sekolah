@@ -476,7 +476,6 @@ const Home = () => {
               className="w-full h-[600px] border-none"
               loading="lazy"
               title="Instagram Feed SMP IP Yakin"
-              sandbox="allow-scripts allow-same-origin"
             />
           </div>
 
