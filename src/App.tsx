@@ -48,28 +48,23 @@ function App() {
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="flex-grow pt-16">
-          <LoadingSpinner>
-            <Suspense fallback={<LoadingSpinner />}>
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/login/:role" element={<Login />} />
-                <Route path="/profile/*" element={<Profile />} />
-                <Route path="/facilities" element={<Facilities />} />
-                <Route path="/extracurricular" element={<Extracurricular />} />
-                <Route path="/news" element={<News />} />
-                <Route path="/contact" element={<Contact />} />
-                <Route
-                  path="/announcement/:id"
-                  element={<AnnouncementDetail />}
-                />
-                <Route path="/news/:id" element={<NewsDetail />} />
-                <Route
-                  path="/academic-calendar"
-                  element={<AcademicCalendar />}
-                />
-              </Routes>
-            </Suspense>
-          </LoadingSpinner>
+          <Suspense fallback={<LoadingSpinner />}>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login/:role" element={<Login />} />
+              <Route path="/profile/*" element={<Profile />} />
+              <Route path="/facilities" element={<Facilities />} />
+              <Route path="/extracurricular" element={<Extracurricular />} />
+              <Route path="/news" element={<News />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route
+                path="/announcement/:id"
+                element={<AnnouncementDetail />}
+              />
+              <Route path="/news/:id" element={<NewsDetail />} />
+              <Route path="/academic-calendar" element={<AcademicCalendar />} />
+            </Routes>
+          </Suspense>
         </main>
         <Footer />
       </div>
