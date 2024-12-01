@@ -20,19 +20,19 @@ const Home = () => {
   const heroSlides = [
     {
       image:
-        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto,f_auto/v1733053391/hero2_xcyeuh.webp",
+        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
       title: "Selamat Datang di SMP IP Yakin Jakarta",
       subtitle: "Membentuk Generasi Unggul, Berakhlak, dan Berprestasi",
     },
     {
       image:
-        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto,f_auto/v1733054117/hero3_vi9lq5.webp",
+        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
       title: "Fasilitas Pembelajaran Modern",
       subtitle: "Mendukung Pengembangan Potensi Siswa",
     },
     {
       image:
-        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/a_auto,f_auto/v1732849400/hero1_jjjv9m.webp",
+        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
       title: "Prestasi Membanggakan",
       subtitle: "Raih Masa Depan Cemerlang Bersama Kami",
     },
@@ -211,21 +211,21 @@ const Home = () => {
                 id: "1",
                 title: "Juara 2 Tari Tingkat Nasional",
                 image:
-                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto,f_auto/v1732849513/tari_prestasi_m3qzce.webp",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733056074/tari_prestasi_p3falv.webp",
                 date: "10 Mar 2024",
               },
               {
                 id: "2",
                 title: "Perayaan Hari Guru",
                 image:
-                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/a_auto,f_auto/v1732849400/hero1_jjjv9m.webp",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
                 date: "8 Mar 2024",
               },
               {
                 id: "3",
                 title: "Kompetisi Robotik",
                 image:
-                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto,f_auto/v1732849513/tari_prestasi_m3qzce.webp",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733056074/tari_prestasi_p3falv.webp",
                 date: "5 Mar 2024",
               },
             ].map((news, index) => (
