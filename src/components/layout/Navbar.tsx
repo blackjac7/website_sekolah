@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import schoolLogo from "../../assets/logo.svg"; // Adjust the path as necessary
-import { Link, useLocation } from "react-router-dom"; // Add useLocation
+import schoolLogo from "../../assets/logo.svg";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "../Icons";
 
 const Navbar = () => {
@@ -44,7 +44,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center">
-              <img src={schoolLogo} alt="School Logo" className="h-8 w-8" />
+              <img
+                src={schoolLogo}
+                alt="Logo SMP IP Yakin Jakarta"
+                className="h-8 w-8"
+              />
               <span className="ml-2 text-xl font-bold text-gray-800">
                 SMP IP Yakin
               </span>
