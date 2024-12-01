@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Calendar, Search, Filter } from "lucide-react";
+import { Calendar, Search, Filter } from "../components/Icons";
 import { academicCalendarData } from "../data/academicCalendar";
 
 const AcademicCalendar = () => {

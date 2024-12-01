@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import schoolLogo from "../../assets/logo.png"; // Adjust the path as necessary
 import { Link, useLocation } from "react-router-dom"; // Add useLocation
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "../Icons";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

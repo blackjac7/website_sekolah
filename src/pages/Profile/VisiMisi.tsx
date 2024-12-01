@@ -1,5 +1,5 @@
 import React from "react";
-import { Target, Award } from "lucide-react";
+import { Target, Award } from "../../components/Icons";
 
 const VisiMisi = () => {
   return (

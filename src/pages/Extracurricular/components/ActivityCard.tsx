@@ -1,6 +1,6 @@
 import React from "react";
 import { ExtracurricularActivity } from "../../../types";
-import { Calendar } from "lucide-react";
+import { Calendar } from "../../../components/Icons";
 
 interface ActivityCardProps {
   activity: ExtracurricularActivity;

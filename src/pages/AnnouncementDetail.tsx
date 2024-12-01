@@ -1,5 +1,12 @@
 import { useParams } from "react-router-dom";
-import { Calendar, Clock, MapPin, Share2, Download, Eye } from "lucide-react";
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Share2,
+  Download,
+  Eye,
+} from "../components/Icons";
 import { useState, useEffect } from "react";
 
 // Dummy data - Idealnya dari API/Database

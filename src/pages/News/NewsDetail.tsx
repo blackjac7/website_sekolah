@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { News } from "../../types";
-import { Calendar, Share2 } from "lucide-react";
+import { Calendar, Share2 } from "../../components/Icons";
 
 const newsData: News[] = [
   {

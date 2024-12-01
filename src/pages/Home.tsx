@@ -11,7 +11,7 @@ import {
   Heart,
   MessageCircle,
   Instagram,
-} from "lucide-react";
+} from "../components/Icons";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -20,13 +20,13 @@ const Home = () => {
   const heroSlides = [
     {
       image:
-        "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3",
+        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733053391/hero2_xcyeuh.webp",
       title: "Selamat Datang di SMP IP Yakin Jakarta",
       subtitle: "Membentuk Generasi Unggul, Berakhlak, dan Berprestasi",
     },
     {
       image:
-        "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3",
+        "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1733054117/hero3_vi9lq5.webp",
       title: "Fasilitas Pembelajaran Modern",
       subtitle: "Mendukung Pengembangan Potensi Siswa",
     },
@@ -208,23 +208,23 @@ const Home = () => {
             {[
               {
                 id: "1",
-                title: "Juara Olimpiade Sains",
+                title: "Juara 2 Tari Tingkat Nasional",
                 image:
-                  "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?ixlib=rb-4.0.3",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1732849513/tari_prestasi_m3qzce.webp",
                 date: "10 Mar 2024",
               },
               {
                 id: "2",
                 title: "Perayaan Hari Guru",
                 image:
-                  "https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/a_auto/f_auto/v1732849400/hero1_jjjv9m.webp",
                 date: "8 Mar 2024",
               },
               {
                 id: "3",
                 title: "Kompetisi Robotik",
                 image:
-                  "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3",
+                  "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/q_auto/f_auto/v1732849513/tari_prestasi_m3qzce.webp",
                 date: "5 Mar 2024",
               },
             ].map((news, index) => (

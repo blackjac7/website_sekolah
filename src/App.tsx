@@ -13,8 +13,12 @@ import Footer from "./components/layout/Footer";
 import LoadingSpinner from "./components/shared/LoadingSpinner";
 
 // Lazy load pages
-const Home = React.lazy(() => import("./pages/Home"));
-const Login = React.lazy(() => import("./pages/Login"));
+const Home = React.lazy(() =>
+  import("./pages/Home").then((module) => ({ default: module.default }))
+);
+const Login = React.lazy(() =>
+  import("./pages/Login").then((module) => ({ default: module.default }))
+);
 const Profile = React.lazy(() => import("./pages/Profile"));
 const Facilities = React.lazy(() => import("./pages/Facilities"));
 const Extracurricular = React.lazy(() => import("./pages/Extracurricular"));

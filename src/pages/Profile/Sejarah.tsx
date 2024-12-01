@@ -1,5 +1,5 @@
 import React from "react";
-import { History } from "lucide-react";
+import { History } from "../../components/Icons";
 
 const Sejarah = () => {
   return (

@@ -1,50 +1,60 @@
-import React from 'react';
-import { GraduationCap } from 'lucide-react';
-import { Teacher } from '../../types';
+import React from "react";
+import { GraduationCap } from "../../components/Icons";
+import { Teacher } from "../../types";
 
 const teachers: Teacher[] = [
   {
-    id: '1',
-    name: 'Drs. Ahmad Hidayat, M.Pd.',
-    position: 'Guru Matematika',
-    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3',
-    description: 'Pengalaman mengajar 15 tahun, spesialisasi dalam Olimpiade Matematika'
+    id: "1",
+    name: "Drs. Ahmad Hidayat, M.Pd.",
+    position: "Guru Matematika",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
+    description:
+      "Pengalaman mengajar 15 tahun, spesialisasi dalam Olimpiade Matematika",
   },
   {
-    id: '2',
-    name: 'Siti Nurhaliza, S.Pd.',
-    position: 'Guru Bahasa Inggris',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3',
-    description: 'Lulusan University of Melbourne, berpengalaman dalam TOEFL preparation'
+    id: "2",
+    name: "Siti Nurhaliza, S.Pd.",
+    position: "Guru Bahasa Inggris",
+    photo:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3",
+    description:
+      "Lulusan University of Melbourne, berpengalaman dalam TOEFL preparation",
   },
   {
-    id: '3',
-    name: 'H. Rahmat Wijaya, M.Si.',
-    position: 'Guru IPA',
-    photo: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3',
-    description: 'Peneliti aktif dalam bidang sains, pembimbing tim Olimpiade Sains'
+    id: "3",
+    name: "H. Rahmat Wijaya, M.Si.",
+    position: "Guru IPA",
+    photo:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
+    description:
+      "Peneliti aktif dalam bidang sains, pembimbing tim Olimpiade Sains",
   },
   {
-    id: '4',
-    name: 'Hj. Aminah Putri, S.Ag.',
-    position: 'Guru PAI',
-    photo: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3',
-    description: 'Hafizah Al-Quran, aktif dalam program tahfiz sekolah'
+    id: "4",
+    name: "Hj. Aminah Putri, S.Ag.",
+    position: "Guru PAI",
+    photo:
+      "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3",
+    description: "Hafizah Al-Quran, aktif dalam program tahfiz sekolah",
   },
   {
-    id: '5',
-    name: 'Dr. Budi Santoso, M.Pd.',
-    position: 'Guru Bahasa Indonesia',
-    photo: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3',
-    description: 'Penulis buku pelajaran, pembimbing lomba debat dan karya tulis'
+    id: "5",
+    name: "Dr. Budi Santoso, M.Pd.",
+    position: "Guru Bahasa Indonesia",
+    photo:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
+    description:
+      "Penulis buku pelajaran, pembimbing lomba debat dan karya tulis",
   },
   {
-    id: '6',
-    name: 'Dewi Kartika, S.Pd.',
-    position: 'Guru Seni Budaya',
-    photo: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3',
-    description: 'Seniman aktif, pembina ekstrakurikuler seni'
-  }
+    id: "6",
+    name: "Dewi Kartika, S.Pd.",
+    position: "Guru Seni Budaya",
+    photo:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3",
+    description: "Seniman aktif, pembina ekstrakurikuler seni",
+  },
 ];
 
 const GuruStaff = () => {
@@ -56,13 +66,16 @@ const GuruStaff = () => {
       </div>
 
       <p className="text-gray-600 mb-8">
-        Tim pengajar SMP IP Yakin Jakarta terdiri dari para profesional berpengalaman
-        yang berkomitmen dalam mengembangkan potensi setiap siswa.
+        Tim pengajar SMP IP Yakin Jakarta terdiri dari para profesional
+        berpengalaman yang berkomitmen dalam mengembangkan potensi setiap siswa.
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {teachers.map((teacher) => (
-          <div key={teacher.id} className="bg-white rounded-lg shadow-md overflow-hidden flex">
+          <div
+            key={teacher.id}
+            className="bg-white rounded-lg shadow-md overflow-hidden flex"
+          >
             <img
               src={teacher.photo}
               alt={teacher.name}

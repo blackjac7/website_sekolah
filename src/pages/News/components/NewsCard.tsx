@@ -1,6 +1,6 @@
 import React from "react";
 import { News } from "../../../types";
-import { Calendar, Award, Users } from "lucide-react";
+import { Calendar, Award, Users } from "../../../components/Icons";
 import { Link } from "react-router-dom";
 
 interface NewsCardProps {

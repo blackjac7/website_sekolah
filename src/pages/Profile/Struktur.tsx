@@ -1,5 +1,5 @@
 import React from "react";
-import { Users } from "lucide-react";
+import { Users } from "../../components/Icons";
 
 const Struktur = () => {
   return (

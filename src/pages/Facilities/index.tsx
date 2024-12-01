@@ -1,6 +1,11 @@
 import { Facility } from "../../types";
 import FacilityCard from "./components/FacilityCard";
-import { School, BookOpen, Dumbbell, FlaskConical } from "lucide-react";
+import {
+  School,
+  BookOpen,
+  Dumbbell,
+  FlaskConical,
+} from "../../components/Icons";
 
 const facilities: Facility[] = [
   {

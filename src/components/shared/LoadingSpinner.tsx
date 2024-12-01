@@ -1,6 +1,7 @@
 import { Player } from "@lottiefiles/react-lottie-player";
+import { memo } from "react";
 
-const LoadingSpinner = ({ children }) => {
+const LoadingSpinner = memo(({ children }) => {
   return (
     <div className="flex items-center justify-center min-h-screen">
       <Player
@@ -11,6 +12,6 @@ const LoadingSpinner = ({ children }) => {
       />
     </div>
   );
-};
+});
 
 export default LoadingSpinner;
