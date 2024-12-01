@@ -58,7 +58,6 @@ const Home = () => {
               }`}
             >
               <img
-                loading="lazy"
                 src={slide.image}
                 alt={slide.title}
                 className="w-full h-full object-cover"
