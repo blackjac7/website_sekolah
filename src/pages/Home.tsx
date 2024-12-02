@@ -61,13 +61,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-[600px] overflow-hidden">
         {/* Carousel */}
-        <div className="relative h-full overflow-x-scroll snap-x snap-mandatory">
+        <div className="relative h-full">
           {heroSlides.map((slide, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 currentSlide === index ? "opacity-100" : "opacity-0"
-              } snap-center`}
+              }`}
             >
               <img
                 src={slide.image.medium}
