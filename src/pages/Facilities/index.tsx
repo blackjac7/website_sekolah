@@ -23,7 +23,7 @@ const facilities: Facility[] = [
     description:
       "Perpustakaan dengan koleksi buku fisik, dilengkapi area membaca yang nyaman dan akses e-library.",
     image:
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3",
+      "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My Logo/w_1024/q_auto/f_auto/v1733112505/Perpustakaan_btnhtn.jpg",
     category: "library",
   },
   {
