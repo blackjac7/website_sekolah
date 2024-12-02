@@ -61,13 +61,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative h-[600px] overflow-hidden">
         {/* Carousel */}
-        <div className="relative h-full">
+        <div className="relative h-full overflow-x-scroll snap-x snap-mandatory">
           {heroSlides.map((slide, index) => (
             <div
               key={index}
               className={`absolute inset-0 transition-opacity duration-1000 ${
                 currentSlide === index ? "opacity-100" : "opacity-0"
-              }`}
+              } snap-center`}
             >
               <img
                 src={slide.image.medium}
@@ -87,7 +87,7 @@ const Home = () => {
               <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fadeIn">
                 {heroSlides[currentSlide].title}
               </h1>
-              <p className="text-xl mb-8 animate-fadeIn delay-200">
+              <p className="text-xl animate-fadeIn delay-200 mb-8">
                 {heroSlides[currentSlide].subtitle}
               </p>
               <div className="flex gap-4">
@@ -128,7 +128,7 @@ const Home = () => {
                 (prev) => (prev - 1 + heroSlides.length) % heroSlides.length
               )
             }
-            className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
+            className="hidden md:block absolute left-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
           >
             <ArrowLeft className="h-6 w-6 text-white" />
           </button>
@@ -136,7 +136,7 @@ const Home = () => {
             onClick={() =>
               setCurrentSlide((prev) => (prev + 1) % heroSlides.length)
             }
-            className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
+            className="hidden md:block absolute right-4 top-1/2 -translate-y-1/2 bg-white/10 hover:bg-white/20 p-2 rounded-full backdrop-blur-sm transition-all"
           >
             <ArrowRight className="h-6 w-6 text-white" />
           </button>
