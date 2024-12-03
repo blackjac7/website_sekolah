@@ -70,12 +70,12 @@ const Home = () => {
               }`}
             >
               <img
-                src={slide.image.medium}
+                src={slide.image.small}
                 alt={slide.title}
                 className="w-full h-full object-cover"
                 crossOrigin="anonymous"
                 srcSet={`${slide.image.small} 640w, ${slide.image.medium} 1024w`}
-                sizes="(min-width: 1024px) 1024px, 640px"
+                sizes="(max-width: 600px) 640px, 1024px"
                 loading={index === 0 ? "eager" : "lazy"}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
