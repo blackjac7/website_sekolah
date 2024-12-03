@@ -19,30 +19,24 @@ const Home = () => {
   const heroSlides = [
     {
       image: {
-        small:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_512/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
       },
       title: "Selamat Datang di SMP IP Yakin Jakarta",
       subtitle: "Membentuk Generasi Unggul, Berakhlak, dan Berprestasi",
     },
     {
       image: {
-        small:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_512/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
       },
       title: "Fasilitas Pembelajaran Modern",
       subtitle: "Mendukung Pengembangan Potensi Siswa",
     },
     {
       image: {
-        small:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_512/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
       },
       title: "Prestasi Membanggakan",
       subtitle: "Raih Masa Depan Cemerlang Bersama Kami",
@@ -74,8 +68,6 @@ const Home = () => {
                 alt={slide.title}
                 className="w-full h-full object-cover"
                 crossOrigin="anonymous"
-                srcSet={`${slide.image.small} 512w, ${slide.image.medium} 1024w`}
-                sizes="(max-width: 600px) 512px, (max-width: 1024px) 1024px, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
             </div>
