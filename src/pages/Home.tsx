@@ -19,6 +19,8 @@ const Home = () => {
   const heroSlides = [
     {
       image: {
+        small:
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_640/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
         medium:
           "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
       },
@@ -27,6 +29,8 @@ const Home = () => {
     },
     {
       image: {
+        small:
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_640/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
         medium:
           "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
       },
@@ -35,6 +39,8 @@ const Home = () => {
     },
     {
       image: {
+        small:
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_640/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
         medium:
           "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
       },
@@ -68,6 +74,9 @@ const Home = () => {
                 alt={slide.title}
                 className="w-full h-full object-cover"
                 crossOrigin="anonymous"
+                srcSet={`${slide.image.small} 640w, ${slide.image.medium} 1024w`}
+                sizes="(min-width: 1024px) 1024px, 640px"
+                loading={index === 0 ? "eager" : "lazy"}
               />
               <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
             </div>
