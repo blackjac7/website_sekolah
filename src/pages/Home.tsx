@@ -20,7 +20,7 @@ const Home = () => {
     {
       image: {
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero1_qjwkk1.webp",
       },
       title: "Selamat Datang di SMP IP Yakin Jakarta",
       subtitle: "Membentuk Generasi Unggul, Berakhlak, dan Berprestasi",
@@ -28,7 +28,7 @@ const Home = () => {
     {
       image: {
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055889/hero2_oa2prx.webp",
       },
       title: "Fasilitas Pembelajaran Modern",
       subtitle: "Mendukung Pengembangan Potensi Siswa",
@@ -36,7 +36,7 @@ const Home = () => {
     {
       image: {
         medium:
-          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
+          "https://res.cloudinary.com/dvnyimxmi/image/upload/t_My%20Logo/w_1024/q_auto/f_auto/v1733055884/hero3_gigw1x.webp",
       },
       title: "Prestasi Membanggakan",
       subtitle: "Raih Masa Depan Cemerlang Bersama Kami",
