@@ -29,6 +29,7 @@ const AnnouncementDetail = React.lazy(
 );
 const NewsDetail = React.lazy(() => import("./pages/News/NewsDetail"));
 const AcademicCalendar = React.lazy(() => import("./pages/AcademicCalendar"));
+const Maintenance = React.lazy(() => import("./pages/Maintenance"));
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -41,6 +42,8 @@ const ScrollToTop = () => {
 };
 
 function App() {
+  const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
+
   useEffect(() => {
     window.history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
@@ -50,27 +53,39 @@ function App() {
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <ScrollToTop />
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        {!isMaintenance && <Navbar />}
         <main className="flex-grow pt-16">
           <Suspense fallback={<LoadingSpinner />}>
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/login/:role" element={<Login />} />
-              <Route path="/profile/*" element={<Profile />} />
-              <Route path="/facilities" element={<Facilities />} />
-              <Route path="/extracurricular" element={<Extracurricular />} />
-              <Route path="/news" element={<News />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route
-                path="/announcement/:id"
-                element={<AnnouncementDetail />}
-              />
-              <Route path="/news/:id" element={<NewsDetail />} />
-              <Route path="/academic-calendar" element={<AcademicCalendar />} />
+              {isMaintenance ? (
+                <Route path="*" element={<Maintenance />} />
+              ) : (
+                <>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/login/:role" element={<Login />} />
+                  <Route path="/profile/*" element={<Profile />} />
+                  <Route path="/facilities" element={<Facilities />} />
+                  <Route
+                    path="/extracurricular"
+                    element={<Extracurricular />}
+                  />
+                  <Route path="/news" element={<News />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route
+                    path="/announcement/:id"
+                    element={<AnnouncementDetail />}
+                  />
+                  <Route path="/news/:id" element={<NewsDetail />} />
+                  <Route
+                    path="/academic-calendar"
+                    element={<AcademicCalendar />}
+                  />
+                </>
+              )}
             </Routes>
           </Suspense>
         </main>
-        <Footer />
+        {!isMaintenance && <Footer />}
       </div>
       <Analytics />
       <SpeedInsights />
