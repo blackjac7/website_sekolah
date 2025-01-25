@@ -64,7 +64,7 @@ const Maintenance = () => {
             Website akan aktif kembali pada:
           </p>
           <p className="text-xl text-yellow-900 font-bold mt-2">
-            25 Januari 2025, jam 08:00 WIB
+            27 Januari 2025, jam 08:00 WIB
           </p>
         </motion.div>
 
