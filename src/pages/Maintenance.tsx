@@ -54,7 +54,7 @@ const Maintenance = () => {
         </motion.p>
 
         {/* Informasi Jadwal Kembali Aktif */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1, duration: 0.5 }}
@@ -66,7 +66,7 @@ const Maintenance = () => {
           <p className="text-xl text-yellow-900 font-bold mt-2">
             27 Januari 2025, jam 08:00 WIB
           </p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Informasi Kontak */}
         <motion.div
