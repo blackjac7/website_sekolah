@@ -1,4 +1,4 @@
-import React, { Suspense, useEffect } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/react";
 
@@ -43,11 +43,18 @@ const ScrollToTop = () => {
 
 function App() {
   const isMaintenance = import.meta.env.VITE_MAINTENANCE === "true";
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     window.history.scrollRestoration = "manual";
     window.scrollTo(0, 0);
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
   }, []);
+
+  if (loading) {
+    return <LoadingSpinner />
+  }
 
   return (
     <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
